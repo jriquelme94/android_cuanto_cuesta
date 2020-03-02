@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- linea para colocar un color de fondo
+    android:background="@android:color/holo_green_light" !-->
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Establezco que mi imput serán sólo numeros y signos. -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/eTxtPrecio"
+        android:inputType="numberDecimal"
+        android:hint="Precio del producto + envío"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/eTxtDolar"
+        android:inputType="numberDecimal"
+        android:hint="Valor del dólar"/>
+
+    <Switch
+        android:id="@+id/SwBxEnvio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="¿Es tu primer envío del año? " />
+        <!--tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="233dp" -->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnCal"
+        android:text="Calcular"
+        android:background="@drawable/botones"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtViRes"
+        android:textColor="#61baad"
+        android:layout_marginTop="60dp"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        android:text="Cuesta: $"
+        />
+        <!--
+        así se centra un texto
+        android:gravity="center"
+        -->
+
+</LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
